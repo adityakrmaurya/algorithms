@@ -1,5 +1,15 @@
+/* 
+ * Unordered Array Representation
+ * Time Complexity:
+ * insert: O(1)
+ * remove maximum: O(N) 
+ * remove: O(1)
+ * find maximum: O(N) 
+ * change priority: 1
+ * join: O(N)
+ *
+ */
 #include <iostream>
-
 template <class T> class PQ {
 private:
   T *pq;
@@ -25,4 +35,35 @@ public:
   }
 };
 
-int main() {}
+int main() {
+  PQ<char> pq(20);
+  pq.insert('B');
+  pq.insert('E');
+  std::cout << pq.get_max();
+  pq.insert('S');
+  pq.insert('T');
+  pq.insert('I');
+  std::cout << pq.get_max();
+  pq.insert('N');
+  std::cout << pq.get_max();
+  pq.insert('F');
+  pq.insert('I');
+  pq.insert('R');
+  std::cout << pq.get_max();
+  pq.insert('S');
+  pq.insert('T');
+  std::cout << pq.get_max();
+  std::cout << pq.get_max();
+  pq.insert('O');
+  pq.insert('U');
+  std::cout << pq.get_max();
+  pq.insert('T');
+  std::cout << pq.get_max();
+  std::cout << pq.get_max();
+  std::cout << pq.get_max();
+  std::cout << pq.get_max();
+  std::cout << pq.get_max();
+  std::cout << pq.get_max();
+  std::cout << pq.get_max();
+  // ETSRTSUTONIIFB
+}
