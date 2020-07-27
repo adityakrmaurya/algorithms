@@ -4,7 +4,7 @@
 // takes the max limit from the command line
 int main(int argc, char *argv[]) {
   unsigned long N = atoi(argv[1]);
-  unsigned long *a = new unsigned long[N]; // allocaes memory in heap
+  unsigned long *a = new unsigned long[N]; // allocates memory in heap
   if (a == 0) {
     std::cout << "Out of Memory" << std::endl;
     return -1;
