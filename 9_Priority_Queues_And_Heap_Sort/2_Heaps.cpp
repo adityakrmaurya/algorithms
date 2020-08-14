@@ -8,6 +8,9 @@
  * A heap is a set of nodes with keys arranged in a complete heap-ordered
  * binary tree, represented as an array
  *
+ * Max-Heap: The parent value is greater than the value of child
+ * Min-Heap: The parent value is smaller than the value of child
+ *
  * heapifying = fixing the heap
  **/
 #include <iostream>
